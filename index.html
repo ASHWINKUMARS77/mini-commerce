@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TechStore</h1>
+        <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <main>
+        <h2>Featured Products</h2>
+        <div id="product-list" class="products-grid"></div>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <div class="cart-summary">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+                <button id="checkout-btn" class="btn-checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
